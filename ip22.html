@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid Waste Management System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #28a745;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .header-section {
+            padding: 50px;
+            background-image: url('waste-management-banner.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+        .header-section h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .header-section p {
+            font-size: 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #28a745;
+        }
+        .card-custom {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .card-custom img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-custom:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #28a745;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Waste Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#garbagebins">Manage Garbage Bins</a></li>
+                <li class="nav-item"><a class="nav-link" href="#routes">Assign Routes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#complaints">View Complaints</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header-section">
+        <h1>Efficient Waste Management System</h1>
+        <p>Managing waste segregation, collection, and transportation effectively</p>
+    </div>
+
+    <!-- Administrator Section -->
+    <section id="admin" class="container mt-5">
+        <h2 class="section-title">Administrator Dashboard</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-custom">
+                    <img src="garbage-bin.jpg" alt="Garbage Bin">
+                    <div class="card-body">
+                        <h5>Create Garbage Bin</h5>
+                        <p>Add new garbage bins to the system with precise locations.</p>
+                        <button class="btn btn-primary">Create Bin</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-custom">
+                    <img src="routes.jpg" alt="Routes">
+                    <div class="card-body">
+                        <h5>Assign Routes</h5>
+                        <p>Assign optimized garbage truck routes for drivers.</p>
+                        <button class="btn btn-primary">Assign Route</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-custom">
+                    <img src="complaints.jpg" alt="Complaints">
+                    <div class="card-body">
+                        <h5>View Complaints</h5>
+                        <p>Monitor public complaints and assign resolution tasks.</p>
+                        <button class="btn btn-primary">View Complaints</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Public Section -->
+    <section id="public" class="container mt-5">
+        <h2 class="section-title">General Public Dashboard</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <img src="register-complaint.jpg" alt="Register Complaint">
+                    <div class="card-body">
+                        <h5>Register Complaint</h5>
+                        <p>File complaints regarding waste management in your area.</p>
+                        <button class="btn btn-primary">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <img src="complaint-status.jpg" alt="Complaint Status">
+                    <div class="card-body">
+                        <h5>Complaint Status</h5>
+                        <p>Check the status of your registered complaints.</p>
+                        <button class="btn btn-primary">Check Status</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Driver Section -->
+    <section id="driver" class="container mt-5">
+        <h2 class="section-title">Driver Dashboard</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <img src="check-work.jpg" alt="Check Work">
+                    <div class="card-body">
+                        <h5>Check Daily Work</h5>
+                        <p>View your assigned routes and garbage collection tasks.</p>
+                        <button class="btn btn-primary">Check Work</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <img src="update-garbage-load.jpg" alt="Update Load">
+                    <div class="card-body">
+                        <h5>Update Garbage Load</h5>
+                        <p>Update the amount of garbage collected during your shift.</p>
+                        <button class="btn btn-primary">Update Load</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer mt-5">
+        <p>&copy; 2024 Solid Waste Management System - All rights reserved</p>
+        <p>Contact us: support@wastemanagement.com | +123-456-7890</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

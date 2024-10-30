@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Road Vehicle Breakdown Assistance</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('breakdown-assistance-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .section-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+        .btn-primary {
+            background-color: #ffcc00;
+            border: none;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Vehicle Breakdown Assistance</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#search">Search Mechanics</a></li>
+                <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search Mechanic Section -->
+    <section id="search" class="container mt-5">
+        <h2 class="section-title">Find Nearby Mechanics</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <input type="text" class="form-control" placeholder="Enter your location or vehicle issue">
+            </div>
+            <div class="col-md-6 mb-4">
+                <button class="btn btn-primary btn-block">Search Mechanics</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Services Section -->
+    <section id="user-services" class="container mt-5">
+        <h2 class="section-title">User Modules</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="mechanic-search.jpg" alt="Mechanic Search">
+                    <div class="card-body">
+                        <h5 class="card-title">Search Mechanic Details</h5>
+                        <p class="card-text">Easily search for nearby licensed mechanics who can help with your vehicle breakdown.</p>
+                        <button class="btn btn-primary">Search Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="geo-location.jpg" alt="Google Geo Location">
+                    <div class="card-body">
+                        <h5 class="card-title">View Google Geo Location</h5>
+                        <p class="card-text">Check mechanics' geo-location in real-time for better assistance.</p>
+                        <button class="btn btn-primary">View Location</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="feedback.jpg" alt="Feedback">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Feedback</h5>
+                        <p class="card-text">Share your experience after receiving vehicle breakdown services.</p>
+                        <button class="btn btn-primary">Post Feedback</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mechanic Services Section -->
+    <section id="mechanic-services" class="container mt-5">
+        <h2 class="section-title">Mechanic Modules</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="post-business.jpg" alt="Post Business">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Business</h5>
+                        <p class="card-text">Register and post your mechanic services for vehicle owners to find you.</p>
+                        <button class="btn btn-primary">Post Business</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="manage-business.jpg" alt="Manage Business">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Business</h5>
+                        <p class="card-text">Update and manage your business information to get more clients.</p>
+                        <button class="btn btn-primary">Manage Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="view-feedback.jpg" alt="View Feedback">
+                    <div class="card-body">
+                        <h5 class="card-title">View Feedback</h5>
+                        <p class="card-text">View customer feedback to improve your services and ratings.</p>
+                        <button class="btn btn-primary">View Feedback</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Services Section -->
+    <section id="admin-services" class="container mt-5">
+        <h2 class="section-title">Admin Modules</h2>
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card">
+                    <img src="admin-approval.jpg" alt="Admin Approval">
+                    <div class="card-body">
+                        <h5 class="card-title">Provide Approval</h5>
+                        <p class="card-text">Admins can approve mechanic registrations and oversee platform activity.</p>
+                        <button class="btn btn-primary">Approve Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer mt-5">
+        <p>&copy; 2024 Vehicle Breakdown Assistance - All rights reserved</p>
+        <p>Contact us: support@vehicleassistance.com | +123-456-7890</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

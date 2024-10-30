@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ko-Matha Dairy Farm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('dairy-farm-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .section-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+        .btn-primary {
+            background-color: #ffcc00;
+            border: none;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Ko-Matha Dairy Farm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section id="products" class="container mt-5">
+        <h2 class="section-title">Our Dairy Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="milk.jpg" alt="Fresh Milk">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Milk</h5>
+                        <p class="card-text">Freshly sourced A1 cow milk, rich in nutrients and flavor.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="curd.jpg" alt="Curd">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Curd</h5>
+                        <p class="card-text">Enjoy our farm-made curd, naturally fermented for rich taste.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="butter.jpg" alt="Butter">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Butter</h5>
+                        <p class="card-text">Farm-fresh butter, perfect for your kitchen needs.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin" class="container mt-5">
+        <h2 class="section-title">Administrator</h2>
+        <div class="row">
+            <div class="col-md-4 offset-md-2">
+                <div class="card">
+                    <img src="admin-register.jpg" alt="Register Admin">
+                    <div class="card-body">
+                        <h5 class="card-title">Register Admin</h5>
+                        <p class="card-text">Admin registration form for maintaining farm operations and inventory.</p>
+                        <button class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="admin-login.jpg" alt="Admin Login">
+                    <div class="card-body">
+                        <h5 class="card-title">Admin Login</h5>
+                        <p class="card-text">Login to access the admin dashboard and manage daily operations.</p>
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <p>&copy; 2024 Ko-Matha Dairy Farm - All rights reserved</p>
+        <p>Contact us: support@komathadairy.com | +123-456-7890</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

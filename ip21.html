@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobFinder - Online Job Application Platform</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #28a745;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .header-section {
+            padding: 50px;
+            background-image: url('job-banner.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+        .header-section h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .header-section p {
+            font-size: 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #28a745;
+        }
+        .job-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .job-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .job-card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #28a745;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">JobFinder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#jobs">Browse Jobs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#saved">Saved Jobs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header-section">
+        <h1>Find Your Dream Job</h1>
+        <p>Explore top job opportunities and apply online with ease.</p>
+    </div>
+
+    <!-- Search Section -->
+    <section id="search" class="container mt-5">
+        <h2 class="section-title">Search for Jobs</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <input type="text" class="form-control" placeholder="Search by job title or location">
+            </div>
+            <div class="col-md-6 mb-4">
+                <input type="text" class="form-control" placeholder="Select job category">
+            </div>
+            <div class="col-md-12">
+                <button class="btn btn-primary btn-block">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings Section -->
+    <section id="jobs" class="container mt-5">
+        <h2 class="section-title">Available Jobs</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card job-card">
+                    <img src="job1.jpg" alt="Job Image">
+                    <div class="card-body">
+                        <h5>Software Developer</h5>
+                        <p>Join our IT team as a software developer. Apply now!</p>
+                        <button class="btn btn-primary">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card job-card">
+                    <img src="job2.jpg" alt="Job Image">
+                    <div class="card-body">
+                        <h5>Marketing Manager</h5>
+                        <p>Lead our marketing efforts and help grow our brand.</p>
+                        <button class="btn btn-primary">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card job-card">
+                    <img src="job3.jpg" alt="Job Image">
+                    <div class="card-body">
+                        <h5>Graphic Designer</h5>
+                        <p>Design creative visuals for our company. Apply today!</p>
+                        <button class="btn btn-primary">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer mt-5">
+        <p>&copy; 2024 JobFinder - All rights reserved</p>
+        <p>Contact us: support@jobfinder.com | +123-456-7890</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

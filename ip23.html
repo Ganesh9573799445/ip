@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Management Information System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #f7f7f7;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #d9534f;
+            border: none;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Blood Management System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#donor">Search Donors</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blood-banks">Blood Banks</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search Donor Section -->
+    <section id="donor" class="container mt-5">
+        <h2 class="section-title">Search for Donors</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <input type="text" class="form-control" placeholder="Search by blood group or location">
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-primary btn-block">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blood Bank Section -->
+    <section id="blood-banks" class="container mt-5">
+        <h2 class="section-title">Blood Banks</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>City Hospital Blood Bank</h5>
+                        <p>Available Blood Groups: A+, B-, O-</p>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>National Blood Bank</h5>
+                        <p>Available Blood Groups: AB+, O+</p>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <p>&copy; 2024 Blood Management System - All rights reserved</p>
+        <p>Contact us: support@bloodsystem.com | +123-456-7890</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

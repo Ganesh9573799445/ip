@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect - Online Learning Platform</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('education-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .section-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #00ccff;
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+        .btn-primary {
+            background-color: #00ccff;
+            border: none;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">EduConnect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container mt-5">
+        <h2 class="section-title">Our Courses</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="programming.jpg" alt="Programming Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Programming 101</h5>
+                        <p class="card-text">Learn the basics of programming with hands-on experience.</p>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="math.jpg" alt="Mathematics Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Mathematics for Beginners</h5>
+                        <p class="card-text">Master the fundamentals of mathematics with easy-to-follow lessons.</p>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="science.jpg" alt="Science Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Science Experiments</h5>
+                        <p class="card-text">Explore the world of science with interactive experiments.</p>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="container mt-5">
+        <h2 class="section-title">Register for EduConnect</h2>
+        <div class="row">
+            <div class="col-md-4 offset-md-2">
+                <div class="card">
+                    <img src="student-register.jpg" alt="Student Registration">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Registration</h5>
+                        <p class="card-text">Register as a student to enroll in courses and access study materials.</p>
+                        <button class="btn btn-primary">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="teacher-register.jpg" alt="Teacher Registration">
+                    <div class="card-body">
+                        <h5 class="card-title">Teacher Registration</h5>
+                        <p class="card-text">Register as a teacher to create courses and track student progress.</p>
+                        <button class="btn btn-primary">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <p>&copy; 2024 EduConnect - All rights reserved</p>
+        <p>Contact us: support@educonnect.com | +123-456-7890</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

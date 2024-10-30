@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Infotech - Laptop Sales & Service</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .section-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Ram Infotech</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#store">Online Store</a></li>
+                <li class="nav-item"><a class="nav-link" href="#service-center">Service Center</a></li>
+                <li class="nav-item"><a class="nav-link" href="#admin-login">Admin</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Admin Section -->
+    <section id="admin-login" class="container mt-5">
+        <h2 class="section-title">Admin Portal</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Login</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="admin-username">Username</label>
+                        <input type="text" class="form-control" id="admin-username" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label for="admin-password">Password</label>
+                        <input type="password" class="form-control" id="admin-password" placeholder="Enter password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h4>Registration</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="admin-name">Name</label>
+                        <input type="text" class="form-control" id="admin-name" placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="admin-email">Email</label>
+                        <input type="email" class="form-control" id="admin-email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="admin-password-reg">Password</label>
+                        <input type="password" class="form-control" id="admin-password-reg" placeholder="Create password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Store Section -->
+    <section id="store" class="container mt-5">
+        <h2 class="section-title">Online Laptop Store</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="laptop1.jpg" alt="Laptop Model 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Model 1</h5>
+                        <p class="card-text">Configuration: Intel i7, 16GB RAM, 512GB SSD</p>
+                        <p class="card-text">Price: $1200</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="laptop2.jpg" alt="Laptop Model 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Model 2</h5>
+                        <p class="card-text">Configuration: Intel i5, 8GB RAM, 256GB SSD</p>
+                        <p class="card-text">Price: $900</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="laptop3.jpg" alt="Laptop Model 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Model 3</h5>
+                        <p class="card-text">Configuration: AMD Ryzen 5, 16GB RAM, 1TB HDD</p>
+                        <p class="card-text">Price: $1100</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Center Section -->
+    <section id="service-center" class="container mt-5">
+        <h2 class="section-title">Laptop Service Center</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Schedule a Repair</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="laptop-model">Laptop Model</label>
+                        <input type="text" class="form-control" id="laptop-model" placeholder="Enter laptop model">
+                    </div>
+                    <div class="form-group">
+                        <label for="laptop-issue">Issue</label>
+                        <textarea class="form-control" id="laptop-issue" rows="3" placeholder="Describe the issue"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Schedule Repair</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h4>Track Service Status</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="service-id">Service ID</label>
+                        <input type="text" class="form-control" id="service-id" placeholder="Enter service ID">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Track Status</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Information Section -->
+    <section id="customer-info" class="container mt-5">
+        <h2 class="section-title">Customer Purchase/Service History</h2>
+        <p>Customers can view their purchase and service history here.</p>
+        <!-- Add appropriate functionality for displaying customer info -->
+    </section>
+
+    <!-- Laptop Rental Agreement Section -->
+    <section id="rental-agreement" class="container mt-5">
+        <h2 class="section-title">Laptop Rental Agreement</h2>
+        <p>Customers can rent laptops by signing an agreement. The terms and conditions of the rental agreement are displayed here.</p>
+        <!-- Add appropriate functionality for displaying and managing rental agreements -->
+    </section>
+
+    <!-- Stock Maintenance Section -->
+    <section id="stock-maintenance" class="container mt-5">
+        <h2 class="section-title">Stock Maintenance</h2>
+        <p>Admins can manage stock details for laptops available in the store.</p>
+        <!-- Add appropriate functionality for managing stock -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer mt-5">
+        <p>&copy; 2024 Ram Infotech - All rights reserved</p>
+        <p>Contact us: support@raminfotech.com | +123-456-7890</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

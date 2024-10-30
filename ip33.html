@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodaikanalEats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+        }
+        nav a {
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .form-container h2 {
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+        input[type=text], input[type=password], input[type=number] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KodaikanalEats - Simplified Restaurant Booking</h1>
+    </header>
+
+    <nav>
+        <a href="#admin">Admin Login</a>
+        <a href="#rooms">Suit Details</a>
+        <a href="#availability">Room Availability</a>
+        <a href="#booking">Online Booking</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="admin">
+        <div class="form-container">
+            <h2>Admin Login</h2>
+            <form action="#">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Admin Registration</h2>
+            <form action="#">
+                <label for="reg-username">Username</label>
+                <input type="text" id="reg-username" name="username" placeholder="Enter Username">
+                
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" name="password" placeholder="Enter Password">
+                
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </section>
+
+    <section id="rooms">
+        <div class="form-container">
+            <h2>Suit Details and Cost</h2>
+            <form action="#">
+                <label for="room-type">Room Type</label>
+                <input type="text" id="room-type" name="roomtype" placeholder="Enter Room Type (Single, Double, Deluxe)">
+                
+                <label for="cost">Cost</label>
+                <input type="number" id="cost" name="cost" placeholder="Enter Cost per Night">
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <section id="availability">
+        <div class="form-container">
+            <h2>Rooms Availability</h2>
+            <form action="#">
+                <label for="room-status">Room Availability Status</label>
+                <input type="text" id="room-status" name="roomstatus" placeholder="Enter Room Availability Status">
+                
+                <input type="submit" value="Update">
+            </form>
+        </div>
+    </section>
+
+    <section id="booking">
+        <div class="form-container">
+            <h2>Online Booking</h2>
+            <form action="#">
+                <label for="booking-type">Booking Type</label>
+                <input type="text" id="booking-type" name="bookingtype" placeholder="Seasonal or Non-seasonal">
+
+                <label for="booking-date">Booking Date</label>
+                <input type="text" id="booking-date" name="bookingdate" placeholder="Enter Date for Booking">
+                
+                <input type="submit" value="Book Now">
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your Email">
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KodaikanalEats - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
