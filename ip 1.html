@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('library.jpg'); /* Library image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; /* Text color contrast for visibility */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent nav bar */
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Main Section */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background for cards */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+            color: black; /* Ensure text inside cards is visible */
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 16px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            text-align: center;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Buttons */
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Welcome to the Library Management System
+    </header>
+
+    <nav>
+        <a href="#admin">Admin Dashboard</a>
+        <a href="#user">User Panel</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Main Section with Admin and User Panels -->
+    <section class="container">
+        <!-- Admin Panel -->
+        <div class="card" id="admin">
+            <img src="https://img.icons8.com/ios/100/3498db/admin-settings-male.png" alt="Admin">
+            <h2>Admin Dashboard</h2>
+            <p>Manage books, users, and transactions</p>
+            <button>Login as Admin</button>
+        </div>
+
+        <!-- User Panel -->
+        <div class="card" id="user">
+            <img src="https://img.icons8.com/ios/100/3498db/user.png" alt="User">
+            <h2>User Dashboard</h2>
+            <p>Search books, view history, manage fines</p>
+            <button>Login as User</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container">
+        <div class="card" id="contact">
+            <img src="https://img.icons8.com/ios/100/3498db/contact-card.png" alt="Contact Us">
+            <h2>Contact Us</h2>
+            <p>Reach out for support or inquiries</p>
+            <button>Contact Library</button>
+        </div>
+    </section>
+
+    <footer>
+        Library Management System © 2024
+    </footer>
+
+</body>
+</html>

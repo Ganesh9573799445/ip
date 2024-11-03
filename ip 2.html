@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            color: #fff;
+            background: url('hotel.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        /* Booking Form Styles */
+        .booking-form {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            margin: 50px auto;
+            width: 400px;
+            border-radius: 8px;
+        }
+
+        .booking-form h2 {
+            text-align: center;
+            color: #ff9800;
+        }
+
+        .booking-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .booking-form input[type="text"],
+        .booking-form input[type="date"],
+        .booking-form input[type="number"],
+        .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .booking-form input[type="submit"] {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .booking-form input[type="submit"]:hover {
+            background-color: #e68900;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="profile.html">Profile</a>
+        <a href="bookings.html">My Bookings</a>
+        <a href="rooms.html">Check Availability</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<!-- Booking Form Section -->
+<section class="booking-form">
+    <h2>Book Your Room</h2>
+    <form action="book_room.php" method="post">
+        <label for="check_in">Check-in Date:</label>
+        <input type="date" id="check_in" name="check_in" required>
+        
+        <label for="check_out">Check-out Date:</label>
+        <input type="date" id="check_out" name="check_out" required>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+        <label for="room_type">Room Type:</label>
+        <select id="room_type" name="room_type" required>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+        </select>
+
+        <input type="submit" value="Book Now">
+    </form>
+</section>
+
+<footer>
+    <p>Hotel Booking &copy; 2024. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

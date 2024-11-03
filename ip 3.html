@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bus Ticket Booking System</title>
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('bus.jpg');
+            background-size: cover;
+            color: #fff;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #ff9800;
+            color: #fff;
+        }
+
+        /* Admin Panel and User Panel Styling */
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            margin: 50px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff9800;
+            margin-bottom: 20px;
+        }
+
+        .module {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .module h3 {
+            color: #ffcc00;
+        }
+
+        .module a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .module a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Buses</a>
+    <a href="#">Bookings</a>
+    <a href="#">Login</a>
+    <a href="#">Contact Us</a>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+    <h2>Bus Ticket Booking System</h2>
+
+    <!-- Admin Panel Section -->
+    <div class="module">
+        <h3>Admin Dashboard</h3>
+        <p>Manage all aspects of the system including buses, users, bookings, and more.</p>
+        <ul>
+            <li><a href="#">Add/Update Bus Information</a></li>
+            <li><a href="#">Manage Registered Users</a></li>
+            <li><a href="#">Manage Bus Categories (e.g., Volvo, Sleeper)</a></li>
+            <li><a href="#">Generate Reports</a></li>
+        </ul>
+    </div>
+
+    <!-- User Panel Section -->
+    <div class="module">
+        <h3>User Panel</h3>
+        <p>Registered users can log in to book, manage their bookings, and view their history.</p>
+        <ul>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Book a Ticket</a></li>
+            <li><a href="#">View Booking History</a></li>
+            <li><a href="#">Cancel a Booking</a></li>
+            <li><a href="#">Check Bus Availability</a></li>
+        </ul>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="module">
+        <h3>User Comments</h3>
+        <p>Users can leave comments about buses and the booking system.</p>
+        <ul>
+            <li><a href="#">Post a Comment</a></li>
+            <li><a href="#">View User Comments</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>Bus Booking System &copy; 2024. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

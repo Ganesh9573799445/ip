@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('airplane.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            color: #fff;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #ff5722;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 90%;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ffcc00;
+        }
+
+        .module {
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .module h3 {
+            color: #ffcc00;
+            text-align: center;
+        }
+
+        .module a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .module a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        form input, form select, form button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Search Flight</a>
+    <a href="#">My Tickets</a>
+    <a href="#">Admin Login</a>
+    <a href="#">Contact Us</a>
+</nav>
+
+<!-- Main Container -->
+<div class="container">
+    <h1>Flight Reservation System</h1>
+
+    <!-- Search Flight Module -->
+    <div class="module">
+        <h3>Search for Flights</h3>
+        <form action="" method="post">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required>
+            
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required>
+            
+            <label for="departure">Departure Date:</label>
+            <input type="date" id="departure" name="departure" required>
+            
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First Class</option>
+            </select>
+            
+            <button type="submit">Search Flights</button>
+        </form>
+    </div>
+
+    <!-- My Tickets Module -->
+    <div class="module">
+        <h3>My Tickets</h3>
+        <p>View your booked tickets, check flight details, or print your e-ticket.</p>
+        <a href="#">Go to My Tickets</a>
+    </div>
+
+    <!-- Admin Module -->
+    <div class="module">
+        <h3>Admin Panel</h3>
+        <p>Manage flight schedules, seat inventory, and customer bookings.</p>
+        <a href="#">Login to Admin Panel</a>
+    </div>
+
+    <!-- Feedback Module -->
+    <div class="module">
+        <h3>Customer Feedback</h3>
+        <p>Leave feedback about your experience.</p>
+        <form action="" method="post">
+            <textarea rows="5" placeholder="Enter your feedback here..." required></textarea>
+            <br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Online Flight Reservation System. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

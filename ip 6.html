@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Ordering System</title>
+    <style>
+        body {
+             
+             font-family: Arial, sans-serif;
+             background: url('cake.jpg') no-repeat center center fixed;
+             background-size: cover; /* Ensures the image covers the whole screen */
+             min-height: 100vh; /* Makes sure the background covers the full height */
+             margin: 0;
+             padding: 0;
+             color: #333;
+            }
+
+
+        nav {
+            background-color: rgba(255, 182, 193, 0.8);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #ff69b4;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ff69b4;
+        }
+
+        .cake-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .cake-item {
+            background-color: white;
+            width: 250px;
+            margin: 20px;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .cake-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .cake-item h3 {
+            color: #ff69b4;
+        }
+
+        .cake-item button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cake-item button:hover {
+            background-color: #ff1493;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        form input, form select, form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 182, 193, 0.9);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Cakes</a>
+    <a href="#">Cart</a>
+    <a href="#">My Orders</a>
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+</nav>
+
+<!-- Main Container -->
+<div class="container">
+    <h1>Welcome to Our Online Cake Store</h1>
+
+    <!-- Cake List -->
+    <div class="cake-list">
+        <div class="cake-item">
+            <img src="chacolate.jpg" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p>Price: $25</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <img src="vanilla.jpg" alt="Vanilla Cake">
+            <h3>Vanilla Cake</h3>
+            <p>Price: $20</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <img src="Red velvet.jpg" alt="Red Velvet Cake">
+            <h3>Red Velvet Cake</h3>
+            <p>Price: $30</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Order Form -->
+    <form action="" method="post">
+        <h2>Place Your Order</h2>
+        <input type="text" name="customer_name" placeholder="Your Name" required>
+        <input type="text" name="address" placeholder="Shipping Address" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <select name="cake_size" required>
+            <option value="">Select Cake Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <textarea name="message" rows="4" placeholder="Custom Message on Cake"></textarea>
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Online Cake Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

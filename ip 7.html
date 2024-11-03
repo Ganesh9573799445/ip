@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Parlour Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('beauty.jpg'); /* Add your background image here */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the background image */
+        }
+
+        header {
+            background: rgba(51, 51, 51, 0.8); /* Semi-transparent background for better readability */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #5cb85c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Beauty Parlour</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="home">
+    <section>
+        <h2>Book Your Appointment</h2>
+        <p>Browse our services and book an appointment at your convenience.</p>
+        <a href="#services" class="button">View Services</a>
+    </section>
+</main>
+
+<main id="services">
+    <section>
+        <h2>Available Services</h2>
+        <ul>
+            <li>Haircut - $30 <a href="#booking" class="button">Book Now</a></li>
+            <li>Facial - $50 <a href="#booking" class="button">Book Now</a></li>
+            <li>Manicure - $20 <a href="#booking" class="button">Book Now</a></li>
+            <li>Pedicure - $25 <a href="#booking" class="button">Book Now</a></li>
+        </ul>
+    </section>
+</main>
+
+<main id="login">
+    <section>
+        <h2>Login to Your Account</h2>
+        <form action="#dashboard" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#register">Register here</a>.</p>
+    </section>
+</main>
+
+<main id="register">
+    <section>
+        <h2>Create Your Account</h2>
+        <form action="#login" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reg-username">Username:</label>
+            <input type="text" id="reg-username" name="reg-username" required>
+
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="reg-password" required>
+
+            <button type="submit" class="button">Register</button>
+        </form>
+    </section>
+</main>
+
+
+</body>
+</html>

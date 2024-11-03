@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Train Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('train.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            color: #fff;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #ff5722;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 80%;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ffcc00;
+        }
+
+        .module {
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .module h3 {
+            color: #ffcc00;
+            text-align: center;
+        }
+
+        .module a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .module a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Search Trains</a>
+    <a href="#">PNR Status</a>
+    <a href="#">Login</a>
+    <a href="#">Contact Us</a>
+</nav>
+
+<!-- Main Container -->
+<div class="container">
+    <h1>Online Train Reservation System</h1>
+
+    <!-- Train Search Section -->
+    <div class="module">
+        <h3>Search Trains</h3>
+        <p>Find trains by route, date, and class.</p>
+        <form action="" method="post">
+            <label for="from">From: </label>
+            <input type="text" id="from" name="from" required>
+            <br><br>
+            <label for="to">To: </label>
+            <input type="text" id="to" name="to" required>
+            <br><br>
+            <label for="date">Journey Date: </label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            <label for="class">Class: </label>
+            <select id="class" name="class">
+                <option value="sleeper">Sleeper</option>
+                <option value="ac1">AC 1 Tier</option>
+                <option value="ac2">AC 2 Tier</option>
+                <option value="ac3">AC 3 Tier</option>
+            </select>
+            <br><br>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- PNR Status Check -->
+    <div class="module">
+        <h3>Check PNR Status</h3>
+        <form action="" method="post">
+            <label for="pnr">Enter PNR No: </label>
+            <input type="text" id="pnr" name="pnr" required>
+            <br><br>
+            <button type="submit">Check Status</button>
+        </form>
+    </div>
+
+    <!-- User and Admin Panels -->
+    <div class="module">
+        <h3>User Dashboard</h3>
+        <p>Manage your bookings, view history, and update profile.</p>
+        <a href="#">Login to User Dashboard</a>
+    </div>
+
+    <div class="module">
+        <h3>Admin Dashboard</h3>
+        <p>Manage train schedules, user accounts, and refund policies.</p>
+        <a href="#">Login to Admin Panel</a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Online Train Reservation System. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
