@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Finder - Simplify Property Search</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('beach.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .property, .search {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .property img {
+            max-width: 100px;
+        }
+
+        .button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .map {
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input[type="text"], input[type="password"], select {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        aside {
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Home Finder - Simplify Your Property Search</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#map">Map View</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="home">
+    <section>
+        <h2>Welcome to Home Finder</h2>
+        <p>Find your dream home or commercial property with ease using our advanced search filters.</p>
+        <a href="#properties" class="button">Start Your Search</a>
+    </section>
+</main>
+
+<main id="properties">
+    <section>
+        <h2>Available Properties</h2>
+        <article class="property">
+            <figure>
+                <img src="house1.jpg" alt="House Image">
+                <figcaption>
+                    <h4>Beautiful Family House</h4>
+                    <p>Price: $350,000</p>
+                    <p>Location: New York City</p>
+                    <a href="#details" class="button">View Details</a>
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="property">
+            <figure>
+                <img src="house.jpg" alt="House Image">
+                <figcaption>
+                    <h4>Modern Apartment</h4>
+                    <p>Price: $220,000</p>
+                    <p>Location: San Francisco</p>
+                    <a href="#details" class="button">View Details</a>
+                </figcaption>
+            </figure>
+        </article>
+    </section>
+</main>
+
+<aside>
+    <h4>Search Filters</h4>
+    <form action="#results" method="get">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter City or Zip Code" required>
+
+        <label for="price-range">Price Range:</label>
+        <select id="price-range" name="price-range">
+            <option value="100k-200k">$100k - $200k</option>
+            <option value="200k-300k">$200k - $300k</option>
+            <option value="300k-400k">$300k - $400k</option>
+            <option value="400k+">$400k and above</option>
+        </select>
+
+        <button type="submit" class="button">Search</button>
+    </form>
+</aside>
+
+<main id="map">
+    <section>
+        <h2>Explore Properties on the Map</h2>
+        <div class="map">
+            <!-- Example Google Map Embed -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509413!2d144.95512331531863!3d-37.817209979751994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5772f53d907dbd0!2sFlinders%20St%20Station%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1630488967936!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+</main>
+
+<main id="login">
+    <section>
+        <h2>Login to Your Account</h2>
+        <form action="#dashboard" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#register">Register here</a>.</p>
+    </section>
+</main>
+
+<main id="register">
+    <section>
+        <h2>Create Your Account</h2>
+        <form action="#login" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reg-username">Username:</label>
+            <input type="text" id="reg-username" name="reg-username" required>
+
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="reg-password" required>
+
+            <button type="submit" class="button">Register</button>
+        </form>
+    </section>
+</main>
+
+
+
+</body>
+</html>

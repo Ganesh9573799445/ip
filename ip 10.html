@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Online Fashion Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('amazon.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .category, .subcategory {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+
+        .product img {
+            max-width: 100px;
+        }
+
+        .button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input[type="text"], input[type="password"], select {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        aside {
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>StyleHub - Your Fashion Destination</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Shop by Category</a></li>
+            <li><a href="#cart">Shopping Cart</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="home">
+    <section>
+        <h2>Welcome to StyleHub</h2>
+        <p>Explore the latest fashion trends and shop your favorite outfits now.</p>
+        <a href="#categories" class="button">Start Shopping</a>
+    </section>
+</main>
+
+<main id="categories">
+    <section>
+        <h2>Shop by Category</h2>
+        <article class="category">Men</article>
+        <article class="category">Women</article>
+        <article class="category">Kids</article>
+        <article class="category">Accessories</article>
+        <article class="category">Footwear</article>
+
+        <h3>Subcategories for Women</h3>
+        <article class="subcategory">Casual Wear</article>
+        <article class="subcategory">Formal Wear</article>
+        <article class="subcategory">Seasonal Collection</article>
+        <article class="subcategory">Party Wear</article>
+    </section>
+
+    <section>
+        <h3>Featured Products</h3>
+        <figure class="product">
+            <figcaption>
+                <h4>Floral Dress</h4>
+                <p>Price: $49.99</p>
+                <a href="#cart" class="button">Add to Cart</a>
+            </figcaption>
+            <img src="dress.jpg" alt="Floral Dress">
+        </figure>
+
+        <figure class="product">
+            <figcaption>
+                <h4>Leather Jacket</h4>
+                <p>Price: $120.00</p>
+                <a href="#cart" class="button">Add to Cart</a>
+            </figcaption>
+            <img src="leather.jpg" alt="Leather Jacket">
+        </figure>
+    </section>
+</main>
+
+<aside>
+    <h4>Exclusive Offers</h4>
+    <p>Sign up today and get 10% off on your first order!</p>
+</aside>
+
+<main id="cart">
+    <section>
+        <h2>Your Shopping Cart</h2>
+        <div class="product">
+            <span>Floral Dress</span>
+            <span>$49.99</span>
+            <a href="#" class="button">Remove</a>
+        </div>
+
+        <div class="product">
+            <span>Leather Jacket</span>
+            <span>$120.00</span>
+            <a href="#" class="button">Remove</a>
+        </div>
+
+        <a href="#checkout" class="button">Proceed to Checkout</a>
+    </section>
+</main>
+
+<main id="login">
+    <section>
+        <h2>Login to Your Account</h2>
+        <form action="#dashboard" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#register">Register here</a>.</p>
+    </section>
+</main>
+
+<main id="register">
+    <section>
+        <h2>Create Your Account</h2>
+        <form action="#login" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reg-username">Username:</label>
+            <input type="text" id="reg-username" name="reg-username" required>
+
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="reg-password" required>
+
+            <button type="submit" class="button">Register</button>
+        </form>
+    </section>
+</main>
+
+
+
+</body>
+</html>

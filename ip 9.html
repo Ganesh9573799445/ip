@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSavvy Online Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('9.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .category, .subcategory {
+            background: #007bff;
+            color: white;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input[type="text"], input[type="password"], select {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .cart-item, .product {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: #f4f4f4;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+        }
+
+        .product img {
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TechSavvy Online Shopping Platform</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Shop by Category</a></li>
+            <li><a href="#cart">Shopping Cart</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="home">
+    <section>
+        <h2>Welcome to TechSavvy</h2>
+        <p>Find the best deals on the latest gadgets and electronics. Browse our categories and find what you're looking for!</p>
+        <a href="#categories" class="button">Start Shopping</a>
+    </section>
+</main>
+
+<main id="categories">
+    <section>
+        <h2>Shop by Category</h2>
+        <div class="category">Smartphones</div>
+        <div class="category">Laptops</div>
+        <div class="category">Tablets</div>
+        <div class="category">Accessories</div>
+
+        <h3>Subcategories for Smartphones</h3>
+        <div class="subcategory">Android</div>
+        <div class="subcategory">iOS</div>
+        <div class="subcategory">5G Phones</div>
+        <div class="subcategory">Budget Phones</div>
+    </section>
+
+    <section>
+        <h3>Featured Products</h3>
+        <div class="product">
+            <div>
+                <h4>iPhone 14</h4>
+                <p>Price: $999</p>
+                <a href="#cart" class="button">Add to Cart</a>
+            </div>
+            <img src="iphone14.jpg" alt="iPhone">
+        </div>
+
+        <div class="product">
+            <div>
+                <h4>Samsung Galaxy S22</h4>
+                <p>Price: $899</p>
+                <a href="#cart" class="button">Add to Cart</a>
+            </div>
+            <img src="samsung s22.jpg" alt="Samsung Galaxy">
+        </div>
+    </section>
+</main>
+
+<main id="cart">
+    <section>
+        <h2>Your Shopping Cart</h2>
+        <div class="cart-item">
+            <span>iPhone 14</span>
+            <span>$999</span>
+            <a href="#" class="button">Remove</a>
+        </div>
+
+        <div class="cart-item">
+            <span>Samsung Galaxy S22</span>
+            <span>$899</span>
+            <a href="#" class="button">Remove</a>
+        </div>
+
+        <a href="#checkout" class="button">Proceed to Checkout</a>
+    </section>
+</main>
+
+<main id="login">
+    <section>
+        <h2>Login to Your Account</h2>
+        <form action="#dashboard" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#register">Register here</a>.</p>
+    </section>
+</main>
+
+<main id="register">
+    <section>
+        <h2>Create Your Account</h2>
+        <form action="#login" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reg-username">Username:</label>
+            <input type="text" id="reg-username" name="reg-username" required>
+
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="reg-password" required>
+
+            <button type="submit" class="button">Register</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 TechSavvy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

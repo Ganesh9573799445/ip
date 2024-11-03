@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsureEasy - Simplify Insurance Management</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('insurance.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        .policy {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        aside {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>InsureEasy - Streamlined Insurance Management</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#policies">Policies</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="home">
+    <section>
+        <h2>Welcome to InsureEasy</h2>
+        <p>Compare and manage your insurance policies in one place, with automated reminders and easy access to policy details.</p>
+        <a href="#policies" class="button">Compare Policies</a>
+    </section>
+</main>
+
+<main id="policies">
+    <section>
+        <h2>Available Insurance Policies</h2>
+        <article class="policy">
+            <h4>Health Insurance</h4>
+            <p>Get the best coverage for your medical needs. Compare multiple health insurance policies tailored to your requirements.</p>
+            <a href="#details" class="button">View Details</a>
+        </article>
+
+        <article class="policy">
+            <h4>Auto Insurance</h4>
+            <p>Protect your vehicle with comprehensive auto insurance. Compare policies for the best rates and coverage.</p>
+            <a href="#details" class="button">View Details</a>
+        </article>
+
+        <article class="policy">
+            <h4>Home Insurance</h4>
+            <p>Secure your home and belongings with top-rated home insurance policies. Find the best plan to suit your needs.</p>
+            <a href="#details" class="button">View Details</a>
+        </article>
+    </section>
+</main>
+
+<main id="dashboard">
+    <section>
+        <h2>User Dashboard</h2>
+        <p>Manage your existing policies, view upcoming payments, file claims, and more.</p>
+        <aside>
+            <h4>Policy Management Tools</h4>
+            <ul>
+                <li>View and Manage Policies</li>
+                <li>Make Premium Payments</li>
+                <li>File Claims</li>
+                <li>Get Policy Renewal Alerts</li>
+            </ul>
+        </aside>
+    </section>
+</main>
+
+<main id="login">
+    <section>
+        <h2>Login to Your Account</h2>
+        <form action="#dashboard" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#register">Register here</a>.</p>
+    </section>
+</main>
+
+<main id="register">
+    <section>
+        <h2>Create Your Account</h2>
+        <form action="#login" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reg-username">Username:</label>
+            <input type="text" id="reg-username" name="reg-username" required>
+
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="reg-password" required>
+
+            <button type="submit" class="button">Register</button>
+        </form>
+    </section>
+</main>
+
+
+
+</body>
+</html>

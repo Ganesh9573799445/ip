@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare Hospital Appointment Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('hospital.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        header {
+            background: rgba(0, 102, 204, 0.8); /* Semi-transparent background */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0066cc;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: rgba(0, 102, 204, 0.8);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], select {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MedCare Hospital Appointment Booking</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#patient">Patient Services</a></li>
+            <li><a href="#hospital">Hospital Services</a></li>
+            <li><a href="#admin">Admin Panel</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="home">
+    <section>
+        <h2>Welcome to MedCare Hospital</h2>
+        <p>Your health is our priority. Book your appointments with ease!</p>
+        <a href="#patient" class="button">Patient Services</a>
+        <a href="#hospital" class="button">Hospital Services</a>
+    </section>
+</main>
+
+<main id="patient">
+    <section>
+        <h2>Patient Services</h2>
+        <h3>Features</h3>
+        <ul>
+            <li>User Registration and Login</li>
+            <li>Search for doctors by specialty and location</li>
+            <li>Book and manage appointments</li>
+            <li>Access appointment history</li>
+            <li>Submit reviews and ratings</li>
+        </ul>
+
+        <h3>Patient Registration</h3>
+        <form action="#login" method="post">
+            <label for="patient-name">Full Name:</label>
+            <input type="text" id="patient-name" name="patient-name" required>
+
+            <label for="patient-email">Email:</label>
+            <input type="email" id="patient-email" name="patient-email" required>
+
+            <label for="patient-password">Password:</label>
+            <input type="password" id="patient-password" name="patient-password" required>
+
+            <button type="submit" class="button">Register</button>
+        </form>
+
+        <h3>Patient Login</h3>
+        <form action="#dashboard" method="post">
+            <label for="patient-login-username">Username:</label>
+            <input type="text" id="patient-login-username" name="patient-login-username" required>
+
+            <label for="patient-login-password">Password:</label>
+            <input type="password" id="patient-login-password" name="patient-login-password" required>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+    </section>
+</main>
+
+<main id="hospital">
+    <section>
+        <h2>Hospital Services</h2>
+        <h3>Features</h3>
+        <ul>
+            <li>Hospital Registration and Login</li>
+            <li>Manage hospital details</li>
+            <li>Update hospital location and timings</li>
+            <li>View appointment statistics</li>
+        </ul>
+
+        <h3>Hospital Registration</h3>
+        <form action="#hospital-login" method="post">
+            <label for="hospital-name">Hospital Name:</label>
+            <input type="text" id="hospital-name" name="hospital-name" required>
+
+            <label for="hospital-email">Email:</label>
+            <input type="email" id="hospital-email" name="hospital-email" required>
+
+            <label for="hospital-password">Password:</label>
+            <input type="password" id="hospital-password" name="hospital-password" required>
+
+            <button type="submit" class="button">Register Hospital</button>
+        </form>
+
+        <h3>Hospital Login</h3>
+        <form action="#hospital-dashboard" method="post">
+            <label for="hospital-login-email">Email:</label>
+            <input type="email" id="hospital-login-email" name="hospital-login-email" required>
+
+            <label for="hospital-login-password">Password:</label>
+            <input type="password" id="hospital-login-password" name="hospital-login-password" required>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+    </section>
+</main>
+
+<main id="admin">
+    <section>
+        <h2>Admin Panel</h2>
+        <h3>Features</h3>
+        <ul>
+            <li>Manage appointments</li>
+            <li>Manage doctors</li>
+            <li>View appointment statistics</li>
+            <li>Access rating details</li>
+        </ul>
+        
+        <h3>Admin Login</h3>
+        <form action="#admin-dashboard" method="post">
+            <label for="admin-email">Email:</label>
+            <input type="email" id="admin-email" name="admin-email" required>
+
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="admin-password" required>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 MedCare Hospital. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
